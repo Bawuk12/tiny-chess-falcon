@@ -1,3 +1,4 @@
+# Falcon v4 - tiny chess engine (alpha-beta, quiescence, TT)
 import json as J,os,urllib.request as H
 U=os.getenv("MAKEFUN_ENV_URL") or exit()
 post=lambda p,b:J.load(H.urlopen(H.Request(U+p,J.dumps(b).encode())))
